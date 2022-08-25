@@ -4,10 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" 
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@300;400;900&display=swap');
+    </style>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Google Books</title>
 </head>
 <body>
+    <header>
+        <div class="container">
+            <div class="header-row">
+                <div class="logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Google_Books_logo_2015.svg/1200px-Google_Books_logo_2015.svg.png" alt="header-logo">
+                </div>
+                <div class="search-box">
+                    <form action="" class="search-box-form" id="search-form">
+                        <input type="text" class="search-box-input" id="input">
+                        <i class="fa-solid fa-magnifying-glass" id="search-button"></i>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="main-row">
+                <div class="books" id="search-books">
+                </div>
+                <div class="title">
+                    <h1>
+                        Books for you
+                    </h1>
+                </div>
+                <div class="books" id="book-for-you">
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Google_Books_logo_2015.svg/1200px-Google_Books_logo_2015.svg.png" alt="">
+                </div>
+                <p>This site created based on Google book API by <a href="https://github.com/turalshkrov">Tural</a></p>
+                <div class="github">
+                    <p><a href="https://github.com/turalshkrov/google-books">Source code</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="app.js"></script>
 </body>
 </html>

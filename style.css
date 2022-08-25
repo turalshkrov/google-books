@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    padding: 2rem 0;
+}
+.container {
+    max-width: 1140px;
+    padding: 0 2rem;
+    margin: auto;
+}
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo img {
+    width: 150px;
+}
+.search-box {
+    margin-right: 2rem;
+}
+.search-box-form {
+    border: 1px solid;
+    border-radius: 2px;
+    padding: 4px 5px 4px 10px;
+}
+.search-box-input {
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    padding: 0;
+}
+.fa-magnifying-glass:hover {
+    cursor: pointer;
+}
+main {
+    padding: 3rem 0;
+}
+.title {
+    font-family: 'Lora', serif;;
+}
+.books{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.book {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    border: 1px solid #777;
+    margin-bottom: 2rem;
+}
+.bookmark {
+    position: absolute;
+    font-size: 1.25rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.6);
+    padding: 15px 10px;
+}
+.bookmark:hover {
+    background-color: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+    transition: .1s;
+}
+.book img {
+    width: 200px;
+}
+.book-title {
+    text-align: center;
+    padding: 10px 0;
+    font-family: 'Lora', serif;;
+    font-size: 0.8rem;
+}
+.book:hover{
+    box-shadow: 1px 1px 10px lightgrey;
+    transition: .3;
+    cursor: pointer;
+}
+.book-title:hover{
+    text-decoration: underline;
+}
+footer {
+    padding: 3rem 0;
+}
+.footer-row {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+.footer-logo img {
+    width: 100px;
+}
+.footer-row a {
+    text-decoration: none;
+    color: #000;
+}
+.footer-row a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 500px) {
+    .container {
+        padding: 0 2rem;
+    }
+    .header-row {
+        justify-content: center;
+    }
+    .logo {
+        margin-bottom: 2rem;
+    }
+    .search-box {
+        margin-right: 0;
+    }
+    main {
+        padding: 1rem 0;
+    }
+    .book, .book img{
+        width: 120px;
+    }
+    .book-title {
+        font-size: 0.75rem;
+    }
+    .footer-row {
+        margin-top: 0;
+        justify-content: center;
+        text-align: center;
+    }
+    .footer-logo {
+        margin-bottom: 1rem;
+    }
+    .github {
+        margin-top: 1rem;
+    }
+    .footer-row {
+        font-size: 12px;
+    }
+}
